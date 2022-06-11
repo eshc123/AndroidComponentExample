@@ -9,10 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidComponentExample" >
+        <receiver
+            android:name=".broadcastreceiver.TimeCheckBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true" >
+        </receiver>
+
         <service
             android:name=".service.RingtoneService"
             android:enabled="true"
-            android:exported="true" >
+            android:exported="false" >
         </service>
 
         <activity
