@@ -19,15 +19,17 @@ class MainActivity : AppCompatActivity() {
         binding.btService.setOnClickListener {
             goToServiceActivity()
         }
-        setBroadcastReceiver()
+        binding.btBroadcastReceiver.setOnClickListener {
+            goToBroadcastReceiverActivity()
+        }
+
     }
 
     private fun goToServiceActivity(){
         startActivity(Intent(this, ServiceActivity::class.java))
     }
-    private fun setBroadcastReceiver(){
-        val intent = IntentFilter(Intent.ACTION_TIME_TICK)
-        val receiver = TimeCheckBroadcastReceiver()
-        registerReceiver(receiver,intent)
+    private fun goToBroadcastReceiverActivity(){
+        startActivity(Intent(this, BroadcastReceiverActivity::class.java))
     }
+
 }

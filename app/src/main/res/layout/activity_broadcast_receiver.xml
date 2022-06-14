@@ -7,28 +7,27 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".activity.MainActivity">
+        tools:context=".activity.BroadcastReceiverActivity">
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/bt_service"
+            android:id="@+id/bt_register_receiver"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/to_service_activity"
-            app:layout_constraintVertical_chainStyle="packed"
-            app:layout_constraintBottom_toTopOf="@id/bt_broadcast_receiver"
+            android:text="@string/register_receiver"
+            app:layout_constraintBottom_toTopOf="@id/bt_unregister_receiver"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/bt_broadcast_receiver"
+            android:id="@+id/bt_unregister_receiver"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/to_broadcast_receiver_activity"
+            android:text="@string/unregister_receiver"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/bt_service" />
-
+            app:layout_constraintTop_toBottomOf="@id/bt_register_receiver" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -2,5 +2,9 @@
     <string name="app_name">AndroidComponentExample</string>
     <!-- service -->
     <string name="to_service_activity">Service</string>
+    <string name="to_broadcast_receiver_activity">Broadcast Receiver</string>
     <string name="start_service">Start Service</string>
+    <string name="bind_service">Bind Service</string>
+    <string name="register_receiver">Register Receiver</string>
+    <string name="unregister_receiver">Unregister Receiver</string>
 </resources>
