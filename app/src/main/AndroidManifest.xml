@@ -22,7 +22,9 @@
             android:name=".service.RingtoneService"
             android:enabled="true"
             android:exported="false" />
-
+        <service
+            android:name=".service.UploadService"
+            android:enabled="true"/>
         <activity
             android:name=".activity.ServiceActivity"
             android:exported="false" />
